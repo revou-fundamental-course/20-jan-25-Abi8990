@@ -1,0 +1,84 @@
+body {
+    font-family: 'Poppins', sans-serif; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(135deg, #c898ff, #7eaeff);
+    margin: 0;
+}
+.container {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+}
+button {
+    margin-top: 15px;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background: #007bff;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+    width: 25%;
+}
+button:hover {
+    background: #0056b3;
+}
+input, select {
+    width: 100%;
+    padding: 12px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.gender-options {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 10px 0;
+}
+.gender-options input {
+    display: none;
+}
+.gender-options label {
+    padding: 10px 15px;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    background: white;
+    color: #007bff;
+    transition: all 0.3s;
+}
+.gender-options input:checked + label {
+    background: #007bff;
+    color: white;
+}
+#hasil {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #333;
+    font-size: 18px;
+}
+#penjelasan {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #555;
+}
+.justify-text {
+    text-align: justify;
+}
